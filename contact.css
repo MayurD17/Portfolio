@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+body {
+  margin: 20px;
+  background:cornflowerblue;
+  font-family: 'Yatra One', cursive;
+}
+header{
+  width: 80%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+}
+.logo{
+  width: 120px;
+  margin-top: 8px;
+}
+nav .logo{
+  display: none;
+}
+nav ul{
+  display: flex;
+  list-style-type:none;
+}
+nav ul li a{
+  color:#212526;
+  display:block;
+  margin:0 2px;
+  font-size: 25px;
+  padding: 8px 18px;
+  transition: 0.2s;
+  border-radius: 30px;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  background:cornflowerblue;
+}
+nav ul li a:active{
+  background:gold;
+  color: #ffffff;
+}
+.hamburger{
+  display: none;
+  height: fit-content;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.hamburger:hover{
+  background:gold;
+}
+.hamburger div{
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+  background: black;
+}
+
+.container {
+    align-items: center;
+    width:800px;
+    display: flex;
+    box-shadow:  0px 3px 5px 6px rgba(0, 0, 0, 0.29);
+    border-radius: 10px;
+    background:gold;
+    color:#040000;
+    padding: 20px;
+    margin-left: 300px;
+    font-size: larger;
+  }
+  .form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+  }
+  .input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #0000004c;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: rgb(5, 0, 0);
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+  }
+  .input:hover{
+    background: cornflowerblue;
+    color:black;
+  }
+.contact{
+    padding: 0.6rem 1.2rem;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+}
+.mahiti{
+    position: relative;
+    padding: 10px;
+}
+
+.icons{
+  color: #000000;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+ 
+  text-align: center;
+  line-height: 35px;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+  display: flex;
+}
+.icons a{
+  
+    display: flex;
+    padding: 10px;
+    width: 35px;
+    height: 20px;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.icons a:hover{
+  transform: scale(1.2);
+}
+
+.contact img{
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.face{
+    background: rgb(8, 8, 87);
+    
+}
+.twit{
+    background: rgb(7, 130, 253);
+}
+.insta{
+    background: rgb(248, 2, 88);
+}
+.link{
+    background: rgb(10, 94, 162);
+}
+.btn{
+    background: none;
+    color: rgb(0, 2, 3);
+    font-size:20px;
+    border:1px solid rgb(9, 0, 0);
+    border-radius: 25px ;
+    
+    transition: 0.5s;
+    margin-left :20px ;
+}
+.btn:hover{
+    box-shadow:  0px 0px 10px  rgb(0, 0, 0);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.copy{
+    color: #fafafa;
+     
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#phno{
+  color: #fafafa;
+}
+@media only screen and (max-width:1100px){
+  body{
+    margin-right: 0px;
+  }
+  header{
+    width: 90%;
+    padding: 0 20px;
+  }
+  nav{
+    position: absolute;
+    left:-300px;
+    top: 0;
+    z-index: 999;
+    width: 280px;
+    height: 100vh;
+    background: gold;
+    transition: 0.2s;
+    box-shadow: 2px 0 20px 0 rgb(0,0,0,0.05);
+  }
+  #nav_check:checked~nav{
+    left: 0;
+  }
+  nav .logo{
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  nav ul li a {
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  nav ul{
+    display: block;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+  .hamburger{
+    display: block;
+  }
+  .form{
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .container{
+    width: 1000px;
+    align-items: center;
+    margin-left:0px ;
+    margin-right: 0px;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .container{
+    width: 600px;
+    margin-left:0px ;
+    margin-right: 10px;
+    height: fit-content;
+  }
+}

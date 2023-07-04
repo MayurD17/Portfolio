@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+body {
+    margin: 20px;
+    background:cornflowerblue;
+    font-family: 'Yatra One', cursive;
+  }
+  header{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+  }
+  .logo{
+    width: 120px;
+    margin-top: 8px;
+  }
+  nav .logo{
+    display: none;
+  }
+  nav ul{
+    display: flex;
+    list-style-type:none;
+  }
+  nav ul li a{
+    color:#212526;
+    display:block;
+    margin:0 2px;
+    font-size: 25px;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+  nav ul li a:hover{
+    background:cornflowerblue;
+  }
+  nav ul li a:active{
+    background:gold;
+    color: #ffffff;
+  }
+  .hamburger{
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+  .hamburger:hover{
+    background:gold;
+  }
+  .hamburger div{
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    background: black;
+  }
+  .about h1{
+    margin-left: 20px;
+  }
+  .about{
+    color: rgb(0, 5, 5);
+    border-radius: 25px;
+    margin-top: 100px;
+    background-color: gold;
+    box-shadow: 0px 3px 5px 5px rgba(1, 0, 0, 0.333);
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .aboutme{
+    color: rgb(0, 2, 5);
+    font-size: larger;
+    height:max-content;
+    width: fit-content;
+    padding: 30px;
+  }
+  .aboutme img{
+    width: 150px;
+  }
+
+  @media only screen and (max-width:1100px){
+    body{
+      margin-right: 0px;
+    }
+    header{
+      width: 90%;
+      padding: 0 20px;
+    }
+    nav{
+      position: absolute;
+      left:-300px;
+      top: 0;
+      z-index: 999;
+      width: 280px;
+      height: 100vh;
+      background: gold;
+      transition: 0.2s;
+      box-shadow: 2px 0 20px 0 rgb(0,0,0,0.05);
+    }
+    #nav_check:checked~nav{
+      left: 0;
+    }
+    nav .logo{
+      display: block;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+    }
+    nav ul li a {
+      margin-bottom: 5px;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    nav ul{
+      display: block;
+      padding: 0 20px;
+      margin-top: 30px;
+    }
+    .hamburger{
+      display: block;
+    }
+  }

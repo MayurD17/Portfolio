@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous"></script>
+          <title>Contact me</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="">
+    </div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+      <!-- <div class="logo">
+        <img src="" alt="">
+      </div>   -->
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="skill.html">Skill</a>
+          </li>
+        </ul>
+    </nav>
+    <label for="nav_check" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+  </header>
+     <div class="container">
+        <div class="form">
+          <div class="contact">
+            <img src="imgs/about.png" alt="">
+            <h3 class="title">Let's get in touch</h3>
+            <div class="info">
+              <div class="information">
+                
+                <p>mayurdeshpande@gmail.com</p>
+              </div>
+              <div class="information">
+               
+                <p>8087988473</p>
+              </div>
+            </div>
+  
+            <div class="social">
+              <p>Connect with us :</p>
+              <div class="icons" id="key">
+                <a href="#" class="face" id="key">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#"  class="twit" id="key">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#"  class="insta" id="key">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#"  class="link" id="key">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact">
+            
+            <form action="" method= "post" >
+              <h3 class="title">Contact us</h3>
+              <div class="mahiti">
+                <input type="text" name="name" class="input" placeholder="Username" />
+              </div>
+              <div class="mahiti">
+                <input type="email" name="email" class="input" placeholder="Email" />
+              </div>
+              <div id="demo" class="mahiti">
+                <input type="tel" name="phone" class="input" placeholder="Phone" />
+              </div>
+              <div class="mahiti textarea">
+                <textarea name="message" class="input" placeholder="Message"></textarea>
+              </div>
+              <button id="mybtn" type="submit" value="Send" class="btn" onclick="myfunction()">Send</button>
+              <p id="phno"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="copy" align="center">Created by &#169; Mayur</p>
+      
+
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="contact.js"></script>
+</body>
+</html>
